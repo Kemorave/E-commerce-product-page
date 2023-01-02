@@ -369,7 +369,7 @@ ${
             {currentProduct.name}
           </p>
           <p className="text-gray-500  text-sm">{currentProduct.description}</p>
-          <div className=" mt-5 flex   items-baseline justify-between">
+          <div className=" mt-5 flex md:flex-col  items-baseline justify-between">
             <div className="flex gap-3   items-baseline">
               <p className="font-bold  text-2xl">${currentProduct.price}</p>
               <p
@@ -379,7 +379,7 @@ ${
                 {currentProduct.discount}%
               </p>
             </div>
-            <p className="text-gray-500    underline lower-underline">
+            <p className="text-gray-400    underline lower-underline">
               ${(currentProduct.price / currentProduct.discount) * 100}
             </p>
           </div>
