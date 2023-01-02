@@ -71,7 +71,8 @@ function App() {
     SetSelectedImageUrl(images[selectedIndex]);
   }
   return (
-    <div className="md:px-[5%] lg:px-[10%] flex flex-col">
+   <main>
+     <div className="md:px-[5%] lg:px-[10%] flex flex-col">
       <header
         className="  bg-white items-start  
       px-5 flex justify-between  pb-5 md:pb-0"
@@ -413,6 +414,7 @@ ${
         </section>
       </div>
     </div>
+   </main>
   );
 }
 
