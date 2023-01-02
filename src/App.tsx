@@ -220,9 +220,10 @@ function App() {
  md:flex flex-col"
         >
           <img
-          onClick={()=>{
-            setIsFullViewOpen(true);
-          }}  className="rounded-2xl w-[18rem] h-[18rem]"
+            onClick={() => {
+              setIsFullViewOpen(true);
+            }}
+            className="rounded-2xl w-[18rem] h-[18rem]"
             alt="sel"
             src={selectedImageUrl}
           />
@@ -236,11 +237,7 @@ function App() {
                   }}
                   className="rounded-lg relative overflow-clip h-16 w-16"
                 >
-                  <img
-                    alt={i.toString()}
-                    key={i + "img"}
-                    src={img}
-                  />
+                  <img alt={i.toString()} key={i + "img"} src={img} />
                   <div
                     className={`absolute top-0 right-0
 ${
@@ -284,9 +281,12 @@ ${
                   <img src="/public/images/icon-next.svg" />
                 </button>
               )}
-              <button onClick={()=>{
-  setIsFullViewOpen(false);
-}} className="self-end my-5">
+              <button
+                onClick={() => {
+                  setIsFullViewOpen(false);
+                }}
+                className="self-end my-5"
+              >
                 <Close className="fill-white hover:fill-orange-500" />
               </button>
               <img
