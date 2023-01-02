@@ -83,9 +83,9 @@ function App() {
               setIsDrawerOpen(!isDrawerOpen);
             }}
           >
-            <img src="/images/icon-menu.svg" />
+            <img alt="menu" src="/images/icon-menu.svg" />
           </button>
-          <img className="fill-gray-500" src={Logo} />
+          <img alt="logo" className="fill-gray-500" src={Logo} />
           <div className="md:flex mx-3 hidden gap-8">
             <p className="nav-button">Collections</p>
             <p className="nav-button">Men</p>
@@ -167,7 +167,7 @@ function App() {
             )}
           </div>
           <button>
-            <img
+            <img alt="avatar"
               className="fill-black h-5 w-5"
               src="/images/image-avatar.png"
             />
@@ -196,7 +196,7 @@ function App() {
               }}
               className="mb-7"
             >
-              <img src="/images/icon-close.svg" />
+              <img alt="close" src="/images/icon-close.svg" />
             </button>
             <p>Collections</p>
             <p>Men</p>
@@ -266,7 +266,7 @@ ${
        h-10 w-10 -mx-5 z-50
        bg-white  top-[50%]"
                 >
-                  <img src="/images/icon-previous.svg" />
+                  <img alt="prev" src="/images/icon-previous.svg" />
                 </button>
               )}
               {canGoNext() && (
@@ -278,7 +278,7 @@ ${
        h-10 w-10 -mx-5 z-10
        bg-white  top-[50%]"
                 >
-                  <img src="/images/icon-next.svg" />
+                  <img alt="nex" src="/images/icon-next.svg" />
                 </button>
               )}
               <button
@@ -289,7 +289,7 @@ ${
               >
                 <Close className="fill-white hover:fill-orange-500" />
               </button>
-              <img
+              <img alt="selected"
                 className="rounded-2xl w-[22rem] h-[22rem]"
                 alt="sel"
                 src={selectedImageUrl}
@@ -339,7 +339,7 @@ ${
        h-10 w-10 mx-5 z-50
        bg-white  top-[45%]"
               >
-                <img src="/images/icon-previous.svg" />
+                <img  alt="p" src="/images/icon-previous.svg" />
               </button>
             )}
             {canGoNext() && (
@@ -351,7 +351,7 @@ ${
        h-10 w-10 mx-5 z-10
        bg-white  top-[45%]"
               >
-                <img src="/images/icon-next.svg" />
+                <img alt="n" src="/images/icon-next.svg" />
               </button>
             )}
             <img
@@ -385,13 +385,13 @@ ${
           </div>
           <div className="grid md:gap-4 items-center grid-cols-1 md:grid-cols-2">
             <div className="flex  py-3 px-5 items-center  my-5 rounded-md bg-gray-100 flex-row justify-between">
-              <img className="h-1 w-3 " src="/images/icon-minus.svg" />
+              <img alt="min" className="h-1 w-3 " src="/images/icon-minus.svg" />
               <p className="font-bold text-xs">
                 {cartItems.length > 0
                   ? cartItems.map((a) => a.quantity).reduce((s, a) => a + s)
                   : 0}
               </p>
-              <img
+              <img alt="pl"
                 className="h-[10px] w-[10px]"
                 src="/images/icon-plus.svg"
               />
