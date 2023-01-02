@@ -291,7 +291,6 @@ ${
               </button>
               <img alt="selected"
                 className="rounded-2xl w-[22rem] h-[22rem]"
-                alt="sel"
                 src={selectedImageUrl}
               />
             </div>
